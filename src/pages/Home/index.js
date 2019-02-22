@@ -3,7 +3,6 @@ import { View, Text, Button } from 'react-native';
 
 import { connect } from 'react-redux';
 import actions from '../../store/actions';
-// getData
 
 class Home extends Component{
 
@@ -11,9 +10,10 @@ class Home extends Component{
     this.loadData();
   }
 
-  loadData(){
-    const { onGetHomeData } = this.props;
-    onGetHomeData(true);
+  async loadData(){
+    const { onGetHomeData, homeData } = this.props;
+    await onGetHomeData();
+    console.warn(homeData);
   }
 
   render(){
@@ -32,7 +32,7 @@ class Home extends Component{
 }
 
 const mapStateToProps = state => ({
-  home: state.home,
+    homeData: state.home.homeData,
 });
 
 const mapDispatchToProps = dispatch => ({
