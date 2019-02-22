@@ -1,5 +1,6 @@
-import { onGetHomeData } from './home';
+import { onGetHomeData, getUserList } from './home';
 
 export default {
   onGetHomeData,
+  getUserList,
 }

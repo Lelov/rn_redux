@@ -1,1 +1,2 @@
 export const HOME_PAGE_DATA = 'HOME_PAGE_DATA';
+export const HOME_USER_DATA = 'HOME_USER_DATA';
