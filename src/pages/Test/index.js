@@ -12,7 +12,7 @@ class Test extends Component{
     return (
       <View style={{flex: 1,alignItems: 'center',justifyContent: 'center'}}>
         <Text>
-          this is Test page
+          This Is Test Page
         </Text>
       </View>
     )
